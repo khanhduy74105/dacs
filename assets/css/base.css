@@ -1,0 +1,22 @@
+:root{
+    --header-with-search-height: 80px;
+    --border-color: #ccc;
+    --primary-color: #fac5c5;
+    --hover-color:#bc7979a3;
+    --nav-height: 40px;
+    --header-height: calc(var(--nav-height) + var(--header-with-search-height));
+    --head-banner-height: 400px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
