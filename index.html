@@ -11,9 +11,9 @@
     <title>Website giới thiệu giày</title>
 </head>
 <body>
-    <div class="header">
+    <div id="header" class="header">
         <div class="grid wide">
-            <div class="header-with-search">
+            <div id="headerws-js" class="header-with-search">
 
                 <div class="header-logo">
                     <a href="" class="header-logo-link">
@@ -325,6 +325,22 @@
         setInterval(() => {
             playSlide(1);
         }, 2500);
+
+        window.onscroll = function (){
+            if (document.documentElement.scrollTop> 50) {
+                var header = document.getElementById("header");
+                var headerws = document.getElementById("headerws-js");
+
+                header.style.height="46px";
+                headerws.style.display="none";
+            }else{
+                var header = document.getElementById("header");
+                var headerws = document.getElementById("headerws-js");
+
+                header.style.height="var(--header-height)";
+                headerws.style.display="flex";
+            }
+        }
     </script>
 </body>
 </html>
