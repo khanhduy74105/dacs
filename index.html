@@ -53,6 +53,24 @@
             </nav>
         </div>
     </div>
+
+
+    <div class="slider">
+        
+        <img src="./assets/img/slider/1877.jpg" alt="" class="slider-img">
+        <img src="./assets/img/slider/2.png" alt="" class="slider-img">
+        <img src="./assets/img/slider/4651918.jpg" alt="" class="slider-img">
+        <img src="./assets/img/slider/Fashion-Web-Banner-04.jpg" alt="" class="slider-img">
+        <img src="./assets/img/slider/Fashion-Web-Banner-11.jpg" alt="" class="slider-img">
+        <img src="./assets/img/slider/Kerfin7_NEA_2406.jpg" alt="" class="slider-img">
+        <img src="./assets/img/slider/lai-them-mot-dot-release-bat-chot-co-ve-acfc-swooshlife-dang-la-yeu-to-lam-nong-thi-truong-resell-giay-o-viet-nam-hon-bat-ki-ai_984.jpg" alt="" class="slider-img">
+
+        <button id="slider_btn-l"><i class="fa-solid fa-angle-left"></i></button>
+        <button id="slider_btn-r"><i class="fa-solid fa-angle-right"></i></button>
+    </div>
+
+
+
     <!-- container -->
     <div class="container">
         <div class="grid wide">
@@ -267,5 +285,46 @@
      
         </div>
     </footer>
+
+
+
+
+
+
+    <script>
+        var i = 1;
+        showImg(i);
+        function playSlide(param) {
+            showImg(i+=param);
+        }
+        function showImg(stt){
+            var slides = document.getElementsByClassName("slider-img");
+            if (stt>slides.length) {
+                i = 1;
+            }
+
+            if (stt<1) {
+                i = slides.length;
+            }
+
+            for (let index = 0; index < slides.length; index++) {
+                slides[index].style.display="none";    
+            }
+
+            slides[i-1].style.display ="block";
+        }
+
+        document.getElementById("slider_btn-l").onclick = function(){
+            playSlide(-1);
+        }
+
+        document.getElementById("slider_btn-r").onclick = function(){
+            playSlide(1);
+        }
+
+        setInterval(() => {
+            playSlide(1);
+        }, 2500);
+    </script>
 </body>
 </html>
