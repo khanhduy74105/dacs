@@ -128,8 +128,8 @@
             </div>
 
             <div class="hot-sale">
-                <h1 class="hot-sale--title"><i class="fa-solid fa-arrow-right"></i> Best Saler <i class="fas fa-fire" style="color: red;"></i></h1>
-                <div class="hot-sale--imgs">
+                <h1 class="hot-sale-item hot-sale--title"><i class="fa-solid fa-arrow-right"></i> Best Saler <i class="fas fa-fire" style="color: red;"></i></h1>
+                <div class="hot-sale-item hot-sale--imgs">
                     <div class="hot-sale--img">
                         <img src="./assets/img/hot1.jpg" alt="">
                     </div>
@@ -143,7 +143,7 @@
                         <img src="./assets/img/hot4.jpg" alt="">
                     </div>
                 </div>
-                <div class="hot-sale--content">
+                <div class="hot-sale-item hot-sale--content">
                     <p class="hot-sale--decript">Xem những mẫu giày Hot nhất hiện nay</p>
                     <a href="" class="hot-sale--link">
                         <div class="hot-sale--btn">XEM THÊM</div>
@@ -218,7 +218,10 @@
                 
             </div>
         </div>
+
     </div>
+    
+    
 
 
     
@@ -346,11 +349,16 @@
                 banner.forEach(element => {
                     element.style.display="block";
                 });
+            } else{
+                var banner = document.querySelectorAll(".container-banner");
+                banner.forEach(element => {
+                    element.style.display="none";
+                });
             }
 
             if (document.documentElement.scrollTop> 600) {
-                var banner = document.querySelectorAll(".produce-item");
-                banner.forEach(element => {
+                var items = document.querySelectorAll(".produce-item");
+                items.forEach(element => {
                     element.style.display="block";
                 });
 
@@ -359,10 +367,75 @@
                     value.style.display="block";
                 }
 
+                var gotop = document.querySelector(".go-to-top");
+                gotop.style.display="block";
+
+                gotop.onclick = function(){
+                    var timer = setInterval(() => {
+                        if (document.documentElement.scrollTop > 0) {
+                            document.documentElement.scrollTop-=20;
+                        }else{
+                            clearInterval(timer);
+                        }
+                    }, 1);
+                }
+
+            }else{
+                var gotop = document.querySelector(".go-to-top");
+                gotop.style.display="none";
+
+                var items = document.querySelectorAll(".produce-item");
+                items.forEach(element => {
+                    element.style.display="none";
+                });
+
+                var anh = document.getElementsByClassName("showProduce");
+                for (const value of anh) {
+                    value.style.display="none";
+                }
             }
+
+            if (document.documentElement.scrollTop> 1200) {
+                var hotItem = document.querySelectorAll(".hot-sale-item");
+                hotItem.forEach(element => {
+                    element.style.animation="bottomIn linear 0.5s forwards";
+                });
+            } else{
+                var hotItem = document.querySelectorAll(".hot-sale-item");
+                hotItem.forEach(element => {
+                    element.style.animation="bottomOut linear 0.5s forwards";
+                });
+            }
+
+
+            if (document.documentElement.scrollTop> 1600) {
+                var big = document.querySelector(".news-item-big");
+                big.style.display="block";
+
+                var items = document.querySelectorAll(".news-item-small");
+                items.forEach(element => {
+                    element.style.display="block";
+                });
+            }else{
+                var big = document.querySelector(".news-item-big");
+                big.style.display="none";
+
+                var items = document.querySelectorAll(".news-item-small");
+                items.forEach(element => {
+                    element.style.display="none";
+                });
+            }
+
 
 
         }
     </script>
+
+        <div class="go-to-top">
+            <p>
+                <i class="fa-solid fa-angle-up"></i>
+
+            </p>
+        </div>
 </body>
 </html>
