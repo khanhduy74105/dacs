@@ -238,6 +238,13 @@
     height: 200vh;
 
 }
+.banner{
+    height: var(--head-banner-height);
+}
+
+.banner div {
+    display: none;
+}
 .container-banner{
     height: var(--head-banner-height);
     background-color: beige;
@@ -299,9 +306,12 @@
 }
 
 
-
+.container-banner-news{
+    animation: leftIn ease-in-out 0.5s;
+}
 .container-banner-video{
     padding: unset;
+    animation: fadeIn linear 1s;
 }
 
 .container .row{
@@ -311,6 +321,8 @@
 .container-banner-img{
     overflow: hidden;
     padding: unset;
+    animation: rightIn ease-in-out 0.5s;
+
 }
 .container-banner-img img{
 
@@ -329,16 +341,24 @@
     background-color: #ccc;
 }
 /* Produce show */
+.produceRow {
+    height: 507px;
+}
 .showProduce-heading{
     font-size: 2.4rem;
     padding: 20px;
 }
 .showProduce{
+    display: none;
     padding: unset;
+    animation: bottomIn ease-in 0.5s;
+
 }
 .produce-item{
+    display: none;
     position: relative;
     padding: unset;
+    animation: bottomIn ease-in 0.75s;
 }
 
 .produce-item--heading{
@@ -672,4 +692,49 @@
 
 .footer-social_item i{
     font-size: 3rem;
+}
+
+
+@keyframes leftIn {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0); 
+    }
+}
+
+@keyframes rightIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0); 
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bottomIn {
+    from {
+        transform: translateY(100%); 
+        opacity: 0;
+
+    }
+
+    to {
+        transform: translateY(0); 
+        opacity: 1;
+
+    }
 }

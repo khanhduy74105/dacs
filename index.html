@@ -74,8 +74,8 @@
     <!-- container -->
     <div class="container">
         <div class="grid wide">
-            <div class="row">
-                <div class="container-banner col l-4">
+            <div class="row banner">
+                <div class="container-banner col l-4 container-banner-news">
                     <span class="container-banner_title">Xu hướng <br>giày thời trang 2022</span>
                     <p class="container-banner_decrip">Đón xem những điều mới lạ về xu hướng giày thời trang giới trẻ trong năm 2022</p>
                     <a href="" class="container-banner_btn--link">
@@ -92,7 +92,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row produceRow">
                 <div class="showProduce col l-12">
                     <h1 class="showProduce-heading"><i class="fa-solid fa-arrow-right"></i>  Các loại giày</h1>
 
@@ -340,6 +340,28 @@
                 header.style.height="var(--header-height)";
                 headerws.style.display="flex";
             }
+
+            if (document.documentElement.scrollTop> 300) {
+                var banner = document.querySelectorAll(".container-banner");
+                banner.forEach(element => {
+                    element.style.display="block";
+                });
+            }
+
+            if (document.documentElement.scrollTop> 600) {
+                var banner = document.querySelectorAll(".produce-item");
+                banner.forEach(element => {
+                    element.style.display="block";
+                });
+
+                var anh = document.getElementsByClassName("showProduce");
+                for (const value of anh) {
+                    value.style.display="block";
+                }
+
+            }
+
+
         }
     </script>
 </body>
