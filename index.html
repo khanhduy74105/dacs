@@ -29,8 +29,12 @@
                 <div class="header-input-search">
                     <input type="text" class="header-input" placeholder="Bạn muốn tìm gì?">
                     <button class="header-input-btn">Tìm kiếm</button>
-                </div>
 
+                    <div class="header-signup" id="header-signup">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Sign Up</span> 
+                    </div>
+                </div>
 
             </div>
             <nav class="header_nav">
@@ -38,16 +42,16 @@
                     <i class="fa-solid fa-bars"></i>
 
                     <ul class="header_nav-category--list">
-                        <li class="category--list-item"><a href="" class="category--list-link">Trang chủ</a></li>
-                        <li class="category--list-item"><a href="" class="category--list-link">Tin tức</a></li>
-                        <li class="category--list-item"><a href="" class="category--list-link">Các loại giày</a></li>
+                        <li class="category--list-item"><a href="./index.html" class="category--list-link">Trang chủ</a></li>
+                        <li class="category--list-item"><a href="./blog.html" class="category--list-link">Tin tức</a></li>
+                        <li class="category--list-item"><a href="./product.html" class="category--list-link">Các loại giày</a></li>
                         <li class="category--list-item"><a href="" class="category--list-link">Hệ thống bán</a></li>
                     </ul>
                 </div>
                 <ul class="header_nav-list">
-                    <li class="header_nav-item"><a href="" class="header_nav-link">Trang chủ</a></li>
-                    <li class="header_nav-item"><a href="" class="header_nav-link">Tin tức</a></li>
-                    <li class="header_nav-item"><a href="" class="header_nav-link">Các loại giày</a></li>
+                    <li class="header_nav-item"><a href="./index.html" class="header_nav-link">Trang chủ</a></li>
+                    <li class="header_nav-item"><a href="./blog.html" class="header_nav-link">Tin tức</a></li>
+                    <li class="header_nav-item"><a href="./product.html" class="header_nav-link">Các loại giày</a></li>
                     <li class="header_nav-item"><a href="" class="header_nav-link">Hệ thống bán</a></li>
                 </ul>
             </nav>
@@ -289,7 +293,76 @@
         </div>
     </footer>
 
+    <div class="login-form" id="login-form">
 
+        <div class="login-form-container" id="login-form-container">
+            <div class="login-accout">
+                <div class="login-head">
+
+                    <h2 class="login-header">Sign up</h2>
+                    <h2 class="login-navi">Sign in</h2>
+                </div>
+
+                <form action="" class="form-account">
+                    <label for="form-account-username" class="">User Name</label>
+                    <div class="form-input">
+                        
+                        <input type="text" id="form-account-username" placeholder="Username...">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <label for="form-account-email" class="">Email</label>
+                    <div class="form-input">
+                        
+                        <input type="email" id="form-account-email" placeholder="Email...">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <label for="form-account-pass" class="">Password</label>
+                    <div class="form-input">
+                        
+                        <input type="password" id="form-account-pass" placeholder="Password...">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+
+                    <input id="form-submit" type="submit" style="display: none;">
+                </form>
+
+                <button class="login-btn-submit">
+                    <label for="form-submit"> SIGN UP NOW</label>
+                </button>
+
+                <hr style="width: 70%; margin:20px auto;">
+
+                <div class="login-sub">
+                    <h2>Or connect with -</h2>
+
+                    <div class="login-social">
+
+                        <i class="fa-brands fa-facebook" ></i>
+                        <i class="fa-brands fa-google"  ></i>
+                        <i class="fa-brands fa-linkedin" ></i>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="login-img">
+                <img src="./assets/img/cv.gif" alt="">
+            </div>
+
+            <div class="form-close-btn" id="form-close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="go-to-top">
+            <p>
+                <i class="fa-solid fa-angle-up"></i>
+
+            </p>
+    </div>
 
 
 
@@ -408,7 +481,7 @@
             }
 
 
-            if (document.documentElement.scrollTop> 1600) {
+            if (document.documentElement.scrollTop> 1500) {
                 var big = document.querySelector(".news-item-big");
                 big.style.display="block";
 
@@ -416,6 +489,9 @@
                 items.forEach(element => {
                     element.style.display="block";
                 });
+
+                var heading =  document.querySelector(".news-heading");
+                heading.style.display="block";
             }else{
                 var big = document.querySelector(".news-item-big");
                 big.style.display="none";
@@ -424,18 +500,35 @@
                 items.forEach(element => {
                     element.style.display="none";
                 });
+                var heading =  document.querySelector(".news-heading");
+                heading.style.display="none";
             }
 
 
 
         }
+
+        var closeBtn = document.getElementById("form-close-btn");
+        var formSign = document.getElementById("login-form");
+        var btnAccount = document.getElementById("header-signup");
+        btnAccount.onclick = function(){
+            formSign.classList.add("open-fl");
+        }
+        document.getElementById("login-form-container").onclick=function(e){
+            e.stopPropagation();
+        }
+
+        
+        closeBtn.onclick = function(e){
+            formSign.classList.remove("open-fl");
+        }
+
+        formSign.onclick = function(e){
+            formSign.classList.remove("open-fl");
+        }
+
     </script>
 
-        <div class="go-to-top">
-            <p>
-                <i class="fa-solid fa-angle-up"></i>
-
-            </p>
-        </div>
+  
 </body>
 </html>
