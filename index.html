@@ -29,7 +29,10 @@
                 <div class="header-input-search">
                     <input type="text" class="header-input" placeholder="Bạn muốn tìm gì?">
                     <button class="header-input-btn">Tìm kiếm</button>
-
+                    <div class="header-darkmode">
+                        <input type="checkbox" id="slick-darkmode">
+                        <label for="slick-darkmode" class="header-darkmode-btn"></label>
+                    </div>
                     <div class="header-signup" id="header-signup">
                         <i class="fa-solid fa-circle-user"></i>
                         <span>Sign Up</span> 
@@ -525,6 +528,12 @@
 
         formSign.onclick = function(e){
             formSign.classList.remove("open-fl");
+        }
+
+        var slick = document.querySelector(".header-darkmode-btn");
+        var body = document.querySelector("body");
+        slick.onclick = function(){
+            body.classList.toggle("dark");
         }
 
     </script>
