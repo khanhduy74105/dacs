@@ -1,12 +1,994 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <script src="./assets/product.js"></script>
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.0.0-web/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
+
+    <title>Website giới thiệu giày</title>
 </head>
+
 <body>
-    3213123
+    <div class="header">
+        <div class="grid wide">
+            <div class="header-with-search">
+
+                <div class="header-logo">
+                    <a href="" class="header-logo-link">
+
+                        <img src="./assets/img/logoMain.jpg" alt="" class="header-logo-img">
+                        <img src="" alt="" class="header-logo-img">
+
+                    </a>
+                    <div class="header-name">
+                        Website giới thiệu <br>sản phẩm giày dép
+                    </div>
+                </div>
+                <div class="header-input-search">
+                    <input type="text" class="header-input" placeholder="Bạn muốn tìm gì?">
+                    <button class="header-input-btn">Tìm kiếm</button>
+                </div>
+
+
+            </div>
+            <nav class="header_nav">
+                <div class="header_nav-category">Danh mục nội dung
+                    <i class="fa-solid fa-bars"></i>
+
+                    <ul class="header_nav-category--list">
+                        <li class="category--list-item"><a href="" class="category--list-link">Trang chủ</a></li>
+                        <li class="category--list-item"><a href="" class="category--list-link">Tin tức</a></li>
+                        <li class="category--list-item"><a href="" class="category--list-link">Các loại giày</a></li>
+                        <li class="category--list-item"><a href="" class="category--list-link">Hệ thống bán</a></li>
+                    </ul>
+                </div>
+                <ul class="header_nav-list">
+                    <li class="header_nav-item"><a href="" class="header_nav-link">Trang chủ</a></li>
+                    <li class="header_nav-item"><a href="" class="header_nav-link">Tin tức</a></li>
+                    <li class="header_nav-item"><a href="" class="header_nav-link">Các loại giày</a></li>
+                    <li class="header_nav-item"><a href="" class="header_nav-link">Hệ thống bán</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Conten -->
+      <img class="banner" src="./assets/banner product/R.jpg" alt="">
+    
+    <div class="content">
+
+                <div class="category">
+                    <button class="tablink" onclick="openPage('adidas', this,'white')">ADIDAS</button>
+                    <button class="tablink" onclick="openPage('nike', this,'white')">NIKE</button>
+                    <button class="tablink" onclick="openPage('yeezy', this,'white')">YEEZY</button>
+                    <button class="tablink" onclick="openPage('jordan', this,'white')">JORDAN</button>
+                    <button class="tablink" onclick="openPage('van', this,'white')">VAN</button>
+                    <button class="tablink" onclick="openPage('other', this,'white')">ORTHER BRAND</button>
+                </div>
+        <!-- adidas -->
+                <div id="adidas" class="listproduce ">
+                    <div class="list-title">
+                        <a href="">-SẢN PHẨM MỚI</a>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a href=""> <img src="./assets/img shoe/boot1.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ADIDAS ULTRABOOST 21</a>
+                                <p>5.000.000₫</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/boot2.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ADIDAS ULTRABOOST 22</a>
+                                <p>5,100,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/boot3.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ADIDAS ULTRABOOST 21 X PARLEY</a>
+                                <p>5,500,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/boot4.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ADIDAS ULTRABOOST 21 X MNISI</a>
+                                <p>3,600,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/boot6.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ADIDAS ULTRABOOS DNA 5</a>
+                                <p>5,200,000 đ đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/boot7.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ADIDAS ULTRABOOST 22 X MARIMEKKO</a>
+                                <p>5,200,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/boot8.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ADIDAS ULTRABOOST 22</a>
+                                <p>5,200,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/boot9.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ADIDAS ULTRABOOS DNA 5.0 W</a>
+                                <p>5,600,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/boot10.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">AIR ZOOM VOMERO 16</a>
+                                <p>5,000,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/boot11.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ADIDAS ULTRABOOS 20 LAB</a>
+                                <p>2,500,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+        <!-- end Adidas -->
+        <!-- nike -->
+                <div id="nike" class="listproduce nike">
+                    <div class="list-title">
+                        <a href="">-SẢN PHẨM MỚI</a>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a href=""> <img src="./assets/img shoe/nike16.jpeg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">AIR FORCE 1 UNDER CONSTRUCTION WHITE</a>
+                                <p>4,200,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/nike2.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">AIR FORCE 1 SHADOW COCONUT MILK</a>
+                                <p>4,600,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/nike3.jpeg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">AIR MAX 1 PREMIUM</a>
+                                <p>6,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/nike4.jpeg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">AIR FORCE 1 SHADOW CRIMSON TINT</a>
+                                <p>3,600,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/nike5.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ULTRA BOOST 20 5TH ANNIVERSARY PACK</a>
+                                <p>3,800,000 đ đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/nike6.jpeg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">AIR ZOOM ALPHAFLY NEXT% FLYKNIT</a>
+                                <p>6,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/nike7.jpeg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">AIR ZOOM RIVAL FLY 3</a>
+                                <p>2,900,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/nike8.jpeg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">AIR ZOOM TEMPO NEXT%</a>
+                                <p>5,600,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/nike9.jpeg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">AIR ZOOM VOMERO 16</a>
+                                <p>3,600,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/nike10.jpeg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ZOOMX INVINCIBLE RUN FLYKNIT</a>
+                                <p>3,600,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        <!--end nike  -->
+        <!-- yeezy -->
+                <div id="yeezy" class="listproduce nike">
+                    <div class="list-title">
+                        <a href="">-SẢN PHẨM MỚI</a>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a href=""> <img src="./assets/img shoe/y1.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Adidas Yeezy 700 MNVN "Bright Cyan"</a>
+                                <p>2,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/y2.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Adidas Yeezy 700 V3 "Arzareth"</a>
+                                <p>2,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/y3.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Adidas Yeezy 700 V3 "Safflower"</a>
+                                <p>2,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/y4.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Adidas Yeezy 700 "Enflame Amber"</a>
+                                <p>2,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/y5.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Adidas Yeezy Boost 700 "Analog"</a>
+                                <p>3,800,000 đ đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/y6.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Adidas Yeezy Boost 700 "Carbon Blue"</a>
+                                <p>3,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/y7.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Adidas Yeezy Boost 700 "Inertia"</a>
+                                <p>3,800,000 đ đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/y8.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Adidas Yeezy Boost 700 "Magnet"</a>
+                                <p>3,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/y9.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Adidas Yeezy Boost 700 "Wave Runner"</a>
+                                <p>3,600,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/y10.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Adidas Yeezy Boost 700 "Sun"</a>
+                                <p>3,600,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+        <!-- end yeezy -->
+        <!-- Jordan -->
+                    <div id="jordan" class="listproduce nike">
+                        <div class="list-title">
+                            <a href="">-SẢN PHẨM MỚI</a>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a href=""> <img src="./assets/img shoe/jordan1.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href=""> Air Jordan 4 Retro</a>
+                                    <p>10,900,000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/jordan2.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href=""> Air Jordan 5 Why Not?</a>
+                                    <p>5,900,000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/jordan3.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Jordan Why Not .5 PF</a>
+                                    <p>3,829,000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/jordan4.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Air Jordan 4 Retro High OG"</a>
+                                    <p>4,999,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/jordan11.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Air Jordan 1 Mid</a>
+                                    <p>1,659,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/jordan6.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Air Jordan 1 Low SE</a>
+                                    <p>3,280,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/jordan7.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Air Jordan 1 GORE-TEX</a>
+                                    <p>5,869,000 ₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/jordan8.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Air Jordan 1 Low G</a>
+                                    <p>4,109,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/jordan9.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Air Jordan XXXVI PF</a>
+                                    <p>5,439,000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/jordan12.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Jordan Point Lane</a>
+                                    <p>4,109,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+          <!-- end jordan -->
+           <!-- van -->
+                    <div id="van" class="listproduce nike">
+                        <div class="list-title">
+                            <a href="">-SẢN PHẨM MỚI</a>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a href=""> <img src="./assets/img shoe/van1.jpg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">DAY JOGGER DASH GREEN LINEN</a>
+                                    <p>2,800,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/van2.jpg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Vans Authentic DIY HC Lemon Chrome</a>
+                                    <p>725.000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/van3.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Vans Era Checkerboard Marshmallow</a>
+                                    <p>725.000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/van5.jpg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Vans Old Skool Black</a>
+                                    <p>725.000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/van6.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Vans Old Skool Forgotten Bones</a>
+                                    <p>875.000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/van7.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Vans Old Skool "I Heart Vans"</a>
+                                    <p>875.000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/van8.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Vans Old Skool Off The Wall Sidewall True Navy</a>
+                                    <p>875.000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/van9.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Vans Old Skool Checkerboard Black/White</a>
+                                    <p>875.000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/van12.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Vans Old Skool Checkerboard White/Black</a>
+                                    <p>875.000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/van13.png"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">Vans Slip-On Black/Pewter Checkerboard</a>
+                                    <p>700.000₫</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                <!-- end van -->
+                <!-- OtherBrand -->
+                    <div id="other" class="listproduce nike">
+                        <div class="list-title">
+                            <a href="">-SẢN PHẨM MỚI</a>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a href=""> <img src="./assets/img shoe/ot1.jpg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">ALEXANDER MCQUEEN WHITE BLACK</a>
+                                    <p>15,000,000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/ot2.jpg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">CONVERSE BLUE LOW</a>
+                                    <p>1,800,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/ot3.jpg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">CONVERSE FEAR OF GOD ESSENTIALS</a>
+                                    <p>4,200,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/oy5.jpeg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">GUCCI RHYTON WORLDWIDE WHITE</a>
+                                    <p>21,000,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/ot6.jpg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">PUMA RS-X LIGHTS WHITE RED</a>
+                                    <p>2,900,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/ot8.jpeg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">NIKECOURT REACT VAPOR NXT</a>
+                                    <p>4,500,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/ot9.jpeg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">NIKECOURT AIR ZOOM GP TURBO</a>
+                                    <p>4,200,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/ot10.jpeg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">NIKECOURT ZOOM VAPOR CAGE 4</a>
+                                    <p>4,500,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/ot11.jpeg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">AIR ZOOM PEGASUS 38</a>
+                                    <p>3,600,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collumn">
+                            <div class="shoe">
+                                <div class="thumnail">
+                                    <a class="link" href=""> <img src="./assets/img shoe/ot12.jpeg"></a>
+                                </div>
+                                <div class="infor-shoe">
+                                    <a href="">ULTRABOOST 19 TRUE PINK</a>
+                                    <p>3,800,000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <!-- end -->
+              
+    </div>
+
+    <!-- ANIMATION -->
+     <div class="suggest-container">
+                <div class="title-slide">
+                    <a href="" class="hr-title"><span>SẢN PHẨM LIÊN QUAN</span></a>
+                </div>
+                <div class="slide-shoe">
+                    <div class="collumn fade">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/ot12.jpeg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ULTRABOOST 19 TRUE PINK</a>
+                                <p>3,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn fade">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a href=""> <img src="./assets/img shoe/ot1.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">ALEXANDER MCQUEEN WHITE BLACK</a>
+                                <p>15,000,000đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn fade">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/ot2.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">CONVERSE BLUE LOW</a>
+                                <p>1,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn fade">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/van9.png"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Vans Old Skool Checkerboard Black/White</a>
+                                <p>875.000₫</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn fade">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/oy5.jpeg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">GUCCI RHYTON WORLDWIDE WHITE</a>
+                                <p>21,000,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                
+                </div>
+    </div>
+     
+    </div>
+    <div class="bsl">
+        <div class="title-slide">
+            <a href="" class="hr-title"><span>BEST SELLER</span></a>
+        </div>
+                <div class="collumn fade">
+                    <div class="shoe">
+                        <div class="thumnail">
+                            <a class="link" href=""> <img src="./assets/img shoe/van5.jpg"></a>
+                        </div>
+                        <div class="infor-shoe">
+                            <a href="">Vans Old Skool Black</a>
+                            <p>725.000₫</p>
+                        </div>
+                    </div>
+                </div>
+                    <div class="collumn fade">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/ot2.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">CONVERSE BLUE LOW</a>
+                                <p>1,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn fade">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/van9.png"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Vans Old Skool Checkerboard Black/White</a>
+                                <p>875.000₫</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/y4.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">Adidas Yeezy 700 "Enflame Amber"</a>
+                                <p>2,800,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collumn">
+                        <div class="shoe">
+                            <div class="thumnail">
+                                <a class="link" href=""> <img src="./assets/img shoe/nike2.jpg"></a>
+                            </div>
+                            <div class="infor-shoe">
+                                <a href="">AIR FORCE 1 SHADOW COCONUT MILK</a>
+                                <p>4,600,000 đ</p>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+
+ 
+    <!-- Footer -->
+    <footer class="footer clear">
+        <div class="grid wide">
+            <div class="row no-gutters">
+                <div class="col l-3 footer-category">
+                    <h3 class="footer-category_header">Danh mục</h3>
+                    <ul class="footer-categor_list">
+                        <li class="footer-category_item"><a href="" class="footer-category_link">Trang chủ</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">Tin tức</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">Các loại giày</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">Hệ thống bán</a></li>
+                    </ul>
+                </div>
+
+                <div class="col l-3 footer-category">
+                    <h3 class="footer-category_header">Danh mục</h3>
+                    <ul class="footer-categor_list">
+                        <li class="footer-category_item"><a href="" class="footer-category_link">Trang chủ</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">Tin tức</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">Các loại giày</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">Hệ thống bán</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-copywrite col l-6">
+                    <div class="row no-gutters footer-brands">
+                        <div class="footer--brand col l-4">
+                            <img src="./assets/img/brands/adidas.png" alt="" class="">
+                        </div>
+                        <div class="footer--brand col l-4">
+                            <img src="./assets/img/brands/converse.png" alt="" class="">
+                        </div>
+                        <div class="footer--brand col l-4">
+                            <img src="./assets/img/brands/nike.jpg" alt="" class="">
+                        </div>
+                    </div>
+                    <div class="row no-gutters footer-infos">
+                        <div class="col l-6">
+                            <span class="footer-copywrite_name"><i class="fa-solid fa-address-card"></i>Nguyễn Thái
+                                Khánh
+                                Duy</span>
+                            <span class="footer-copywrite_email"><i
+                                    class="fa-solid fa-envelope"></i>duyntk.21it@vku.udn.vn</span>
+                            <span class="footer-copywrite_phone"><i class="fa-solid fa-phone"></i>0941 972 159</span>
+                        </div>
+                        <div class="col l-6">
+                            <span class="footer-copywrite_name"><i class="fa-solid fa-address-card"></i>Hồ Đăng
+                                Nguyện</span>
+                            <span class="footer-copywrite_email"><i
+                                    class="fa-solid fa-envelope"></i>nguyenhd.21it@vku.udn.vn</span>
+                            <span class="footer-copywrite_phone"><i class="fa-solid fa-phone"></i>0382876922</span>
+                        </div>
+                        <div class="col l-6">
+                            <span class="footer-copywrite_name"><i class="fa-solid fa-address-card"></i>Nguyễn Anh
+                                Quân</span>
+                            <span class="footer-copywrite_email"><i
+                                    class="fa-solid fa-envelope"></i>quanna.21it@vku.udn.vn</span>
+                            <span class="footer-copywrite_phone"><i class="fa-solid fa-phone"></i>0826206225</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-social col l-12">
+                    <a href="" class="footer-social_item"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="footer-social_item"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="footer-social_item"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" class="footer-social_item"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="footer-social_item"><i class="fa-brands fa-pinterest"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
 </body>
 </html>
