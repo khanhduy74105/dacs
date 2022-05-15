@@ -6,6 +6,10 @@
     --nav-height: 40px;
     --header-height: calc(var(--nav-height) + var(--header-with-search-height));
     --head-banner-height: 400px;
+    --text-color: black;
+    --backgr-color:white;
+
+
 }
 
 * {
@@ -19,4 +23,8 @@ html {
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--backgr-color);
 }

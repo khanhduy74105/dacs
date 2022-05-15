@@ -11,9 +11,9 @@
     <title>Website giới thiệu giày</title>
 </head>
 <body>
-    <div class="header">
+    <div id="header" class="header">
         <div class="grid wide">
-            <div class="header-with-search">
+            <div id="headerws-js" class="header-with-search">
 
                 <div class="header-logo">
                     <a href="" class="header-logo-link">
@@ -29,8 +29,15 @@
                 <div class="header-input-search">
                     <input type="text" class="header-input" placeholder="Bạn muốn tìm gì?">
                     <button class="header-input-btn">Tìm kiếm</button>
+                    <div class="header-darkmode">
+                        <input type="checkbox" id="slick-darkmode">
+                        <label for="slick-darkmode" class="header-darkmode-btn"></label>
+                    </div>
+                    <div class="header-signup" id="header-signup">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <span>Sign Up</span> 
+                    </div>
                 </div>
-
 
             </div>
             <nav class="header_nav">
@@ -38,16 +45,16 @@
                     <i class="fa-solid fa-bars"></i>
 
                     <ul class="header_nav-category--list">
-                        <li class="category--list-item"><a href="" class="category--list-link">Trang chủ</a></li>
-                        <li class="category--list-item"><a href="" class="category--list-link">Tin tức</a></li>
-                        <li class="category--list-item"><a href="" class="category--list-link">Các loại giày</a></li>
+                        <li class="category--list-item"><a href="./index.html" class="category--list-link">Trang chủ</a></li>
+                        <li class="category--list-item"><a href="./blog.html" class="category--list-link">Tin tức</a></li>
+                        <li class="category--list-item"><a href="./product.html" class="category--list-link">Các loại giày</a></li>
                         <li class="category--list-item"><a href="" class="category--list-link">Hệ thống bán</a></li>
                     </ul>
                 </div>
                 <ul class="header_nav-list">
-                    <li class="header_nav-item"><a href="" class="header_nav-link">Trang chủ</a></li>
-                    <li class="header_nav-item"><a href="" class="header_nav-link">Tin tức</a></li>
-                    <li class="header_nav-item"><a href="" class="header_nav-link">Các loại giày</a></li>
+                    <li class="header_nav-item"><a href="./index.html" class="header_nav-link">Trang chủ</a></li>
+                    <li class="header_nav-item"><a href="./blog.html" class="header_nav-link">Tin tức</a></li>
+                    <li class="header_nav-item"><a href="./product.html" class="header_nav-link">Các loại giày</a></li>
                     <li class="header_nav-item"><a href="" class="header_nav-link">Hệ thống bán</a></li>
                 </ul>
             </nav>
@@ -74,8 +81,8 @@
     <!-- container -->
     <div class="container">
         <div class="grid wide">
-            <div class="row">
-                <div class="container-banner col l-4">
+            <div class="row banner">
+                <div class="container-banner col l-4 container-banner-news">
                     <span class="container-banner_title">Xu hướng <br>giày thời trang 2022</span>
                     <p class="container-banner_decrip">Đón xem những điều mới lạ về xu hướng giày thời trang giới trẻ trong năm 2022</p>
                     <a href="" class="container-banner_btn--link">
@@ -92,7 +99,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row produceRow">
                 <div class="showProduce col l-12">
                     <h1 class="showProduce-heading"><i class="fa-solid fa-arrow-right"></i>  Các loại giày</h1>
 
@@ -128,8 +135,8 @@
             </div>
 
             <div class="hot-sale">
-                <h1 class="hot-sale--title"><i class="fa-solid fa-arrow-right"></i> Best Saler <i class="fas fa-fire" style="color: red;"></i></h1>
-                <div class="hot-sale--imgs">
+                <h1 class="hot-sale-item hot-sale--title"><i class="fa-solid fa-arrow-right"></i> Best Saler <i class="fas fa-fire" style="color: red;"></i></h1>
+                <div class="hot-sale-item hot-sale--imgs">
                     <div class="hot-sale--img">
                         <img src="./assets/img/hot1.jpg" alt="">
                     </div>
@@ -143,7 +150,7 @@
                         <img src="./assets/img/hot4.jpg" alt="">
                     </div>
                 </div>
-                <div class="hot-sale--content">
+                <div class="hot-sale-item hot-sale--content">
                     <p class="hot-sale--decript">Xem những mẫu giày Hot nhất hiện nay</p>
                     <a href="" class="hot-sale--link">
                         <div class="hot-sale--btn">XEM THÊM</div>
@@ -218,7 +225,10 @@
                 
             </div>
         </div>
+
     </div>
+    
+    
 
 
     
@@ -286,7 +296,76 @@
         </div>
     </footer>
 
+    <div class="login-form" id="login-form">
 
+        <div class="login-form-container" id="login-form-container">
+            <div class="login-accout">
+                <div class="login-head">
+
+                    <h2 class="login-header">Sign up</h2>
+                    <h2 class="login-navi">Sign in</h2>
+                </div>
+
+                <form action="" class="form-account">
+                    <label for="form-account-username" class="">User Name</label>
+                    <div class="form-input">
+                        
+                        <input type="text" id="form-account-username" placeholder="Username...">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <label for="form-account-email" class="">Email</label>
+                    <div class="form-input">
+                        
+                        <input type="email" id="form-account-email" placeholder="Email...">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <label for="form-account-pass" class="">Password</label>
+                    <div class="form-input">
+                        
+                        <input type="password" id="form-account-pass" placeholder="Password...">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+
+                    <input id="form-submit" type="submit" style="display: none;">
+                </form>
+
+                <button class="login-btn-submit">
+                    <label for="form-submit"> SIGN UP NOW</label>
+                </button>
+
+                <hr style="width: 70%; margin:20px auto;">
+
+                <div class="login-sub">
+                    <h2>Or connect with -</h2>
+
+                    <div class="login-social">
+
+                        <i class="fa-brands fa-facebook" ></i>
+                        <i class="fa-brands fa-google"  ></i>
+                        <i class="fa-brands fa-linkedin" ></i>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="login-img">
+                <img src="./assets/img/cv.gif" alt="">
+            </div>
+
+            <div class="form-close-btn" id="form-close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="go-to-top">
+            <p>
+                <i class="fa-solid fa-angle-up"></i>
+
+            </p>
+    </div>
 
 
 
@@ -325,6 +404,140 @@
         setInterval(() => {
             playSlide(1);
         }, 2500);
+
+        window.onscroll = function (){
+            if (document.documentElement.scrollTop> 50) {
+                var header = document.getElementById("header");
+                var headerws = document.getElementById("headerws-js");
+
+                header.style.height="46px";
+                headerws.style.display="none";
+            }else{
+                var header = document.getElementById("header");
+                var headerws = document.getElementById("headerws-js");
+
+                header.style.height="var(--header-height)";
+                headerws.style.display="flex";
+            }
+
+            if (document.documentElement.scrollTop> 300) {
+                var banner = document.querySelectorAll(".container-banner");
+                banner.forEach(element => {
+                    element.style.display="block";
+                });
+            } else{
+                var banner = document.querySelectorAll(".container-banner");
+                banner.forEach(element => {
+                    element.style.display="none";
+                });
+            }
+
+            if (document.documentElement.scrollTop> 600) {
+                var items = document.querySelectorAll(".produce-item");
+                items.forEach(element => {
+                    element.style.display="block";
+                });
+
+                var anh = document.getElementsByClassName("showProduce");
+                for (const value of anh) {
+                    value.style.display="block";
+                }
+
+                var gotop = document.querySelector(".go-to-top");
+                gotop.style.display="block";
+
+                gotop.onclick = function(){
+                    var timer = setInterval(() => {
+                        if (document.documentElement.scrollTop > 0) {
+                            document.documentElement.scrollTop-=20;
+                        }else{
+                            clearInterval(timer);
+                        }
+                    }, 1);
+                }
+
+            }else{
+                var gotop = document.querySelector(".go-to-top");
+                gotop.style.display="none";
+
+                var items = document.querySelectorAll(".produce-item");
+                items.forEach(element => {
+                    element.style.display="none";
+                });
+
+                var anh = document.getElementsByClassName("showProduce");
+                for (const value of anh) {
+                    value.style.display="none";
+                }
+            }
+
+            if (document.documentElement.scrollTop> 1200) {
+                var hotItem = document.querySelectorAll(".hot-sale-item");
+                hotItem.forEach(element => {
+                    element.style.animation="bottomIn linear 0.5s forwards";
+                });
+            } else{
+                var hotItem = document.querySelectorAll(".hot-sale-item");
+                hotItem.forEach(element => {
+                    element.style.animation="bottomOut linear 0.5s forwards";
+                });
+            }
+
+
+            if (document.documentElement.scrollTop> 1500) {
+                var big = document.querySelector(".news-item-big");
+                big.style.display="block";
+
+                var items = document.querySelectorAll(".news-item-small");
+                items.forEach(element => {
+                    element.style.display="block";
+                });
+
+                var heading =  document.querySelector(".news-heading");
+                heading.style.display="block";
+            }else{
+                var big = document.querySelector(".news-item-big");
+                big.style.display="none";
+
+                var items = document.querySelectorAll(".news-item-small");
+                items.forEach(element => {
+                    element.style.display="none";
+                });
+                var heading =  document.querySelector(".news-heading");
+                heading.style.display="none";
+            }
+
+
+
+        }
+
+        var closeBtn = document.getElementById("form-close-btn");
+        var formSign = document.getElementById("login-form");
+        var btnAccount = document.getElementById("header-signup");
+        btnAccount.onclick = function(){
+            formSign.classList.add("open-fl");
+        }
+        document.getElementById("login-form-container").onclick=function(e){
+            e.stopPropagation();
+        }
+
+        
+        closeBtn.onclick = function(e){
+            formSign.classList.remove("open-fl");
+        }
+
+        formSign.onclick = function(e){
+            formSign.classList.remove("open-fl");
+        }
+
+        var slick = document.querySelector(".header-darkmode-btn");
+        var body = document.querySelector("body");
+        slick.onclick = function(){
+            body.classList.toggle("dark");
+        }
+
     </script>
+
+  
 </body>
 </html>
