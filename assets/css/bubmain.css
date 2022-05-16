@@ -61,3 +61,19 @@
 .noidung-content  ul{
     margin-left: 50px;
 }
+.mucluc {
+    width: 60%;
+    border :1px solid rgb(57, 106, 252);
+    border-radius : 10px;
+    padding : 20px;
+    font-size: 15px;
+    line-height:20px;
+    margin-bottom: 10px;
+}
+.mucluc a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    color: rgb(57, 106, 252);
+    text-decoration: none;
+}
