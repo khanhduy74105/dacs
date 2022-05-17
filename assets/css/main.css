@@ -27,6 +27,7 @@
     margin-left: 30px;
     height: 36px;
     line-height: 36px;
+    min-width: 90px;
 }
 .header-signup i{
     font-size: 2.4rem;
@@ -47,6 +48,7 @@
 .header-logo{
     display: flex;
     align-items: center;
+    max-width: 15%;
 }
 .header-logo-img{
     height: 50px;
@@ -64,6 +66,7 @@
     line-height: var(--header-with-search-height);
     display: flex;
     align-items: center;
+    max-width: 85%;
 }
 
 .header-input{
@@ -94,10 +97,12 @@
     background-color: var(--primary-color);
     height: var(--nav-height);
     justify-content: space-between;
+    margin: unset;
 }
 
 .header_nav-category{
     width: 200px;
+    max-width: 30%;
     text-align: center;
     cursor: pointer;
     position: relative;
@@ -158,6 +163,7 @@
 }
 
 .category--list-link{
+    
     padding-left: 20px;
     display: block;
     width: 100%;
@@ -173,6 +179,8 @@
 .header_nav-list{
     display: flex;
     list-style: none;
+    max-width: 70%;
+
 }
 .header_nav-item{
     min-width: 130px;
@@ -203,11 +211,11 @@
     display: none;
 }
 #slick-darkmode:checked ~ label{
-    transform: translateX(18px) translateY(-50%);
+    transform: translateX(100%) translateY(-50%);
 
 }
 .header-darkmode{
-    width: 40px;
+    min-width: 40px;
     height: 24px;
     background-color: var(--text-color);
     border-radius: 12px;
@@ -287,7 +295,7 @@
 
 
 .banner{
-    height: var(--head-banner-height);
+    height: fit-content;
 }
 
 .banner div {
@@ -374,13 +382,11 @@
     overflow: hidden;
     padding: unset;
     animation: rightIn ease-in-out 0.5s;
+    background-image: url(../img/giphy1.gif);
+    background-size: contain;
 
 }
-.container-banner-img img{
 
-    transform: translateY(-84px);
-    width: 100%;
-}
 .news{
 
 }
@@ -394,7 +400,7 @@
 }
 /* Produce show */
 .produceRow {
-    height: 507px;
+    height: fit-content;
 }
 .showProduce-heading{
     font-size: 2.4rem;
@@ -505,17 +511,17 @@
 
 .hot-sale--img:nth-child(2){
     position: absolute;
-    left: 144px;
+    left: 18%;
     animation-delay: 2s;
 }
 .hot-sale--img:nth-child(3){
     position: absolute;
-    left: 288px;
+    left: 36%;
     animation-delay: 4s;
 }
 .hot-sale--img:nth-child(4){
     position: absolute;
-    left: 433px;
+    left: 54%;
     animation-delay: 6s;
 }
 .hot-sale--img img{
@@ -533,14 +539,15 @@
     position: absolute;
     font-size: 2.4rem;
     color: white;
+    left: 15%;
+    line-height: 24px;
     top: 60%;
-    left: -10%;
 }
 .hot-sale--link{
     display: block;
     position: absolute;
     bottom: 50px;
-    right: 210px;
+    right: 90px;
     height: 46px;
     width: 160px;
     line-height: 40px;
@@ -633,7 +640,6 @@
 }
 
 .news-item-img img{
-    transform: translateX(-80px);
     height: 100%;
 }
 
@@ -793,7 +799,7 @@
 }
 .footer-social_item{
     color:  var(--text-color);
-    display: block;
+    display: inline-block;
     margin: 12px 0;
 
 }
