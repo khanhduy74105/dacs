@@ -230,6 +230,62 @@
                 
                 
             </div>
+
+            <div class="community row">
+                <div class="community-child1 col l-6">
+                    <img src="./assets/img/cmnt.jpeg" alt="">
+                    <div class="community-showcard">
+                        <i class="fa-solid fa-xmark"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="comunity-card">
+                        <img src="./assets/img/giaycmnt.jpg" alt="">
+                        <p>Chuck II All Star Yellow Classic</p>
+                        <span><b>66.0$</b></span>
+                    </div>
+                </div>
+
+                <div class="community-child2 col l-6">
+                    <div class="community-title">
+                        <div class="community-title--content">
+                            <h1>Show us <br> Your Style</h1>
+                            <p>Tag @Converse on Instagram with <br> #ConverseStyle for a change a featured.</p>
+                        </div>
+                    </div>
+
+                    <div class="community-relate">
+                        <div class="community-relate-item">
+                            <img src="./assets/img/cmntgiay2.jpg" alt="">
+                            <img src="./assets/img/cmntgiay1.jpg" alt="">
+                            <p class="community-relate-decript">Chuck II All Star Yellow Classic<br> <b>66.0$</b></p>
+                        </div>
+                        <div class="community-relate-item">
+                            <img src="./assets/img/cmnt2.jpeg" alt="">
+                            <div class="community-showcard community-showcard2">
+                                <i class="fa-solid fa-xmark"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="comunity-card comunity-card2">
+                                <img src="./assets/img/goayxanh.jpg" alt="">
+                                <p>Chuck II All Star Blue Classic</p>
+                                <span><b>66.0$</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="slogan row">
+                <div class="slogan-content">
+
+                    <p class="slogan-decript">
+                        Unlock exclusive style and sales, product drops, and our latest collaborations<br>
+                        with the Converse community—all sent straight to your inbox.
+                    </p>
+                    <div class="slogan-btn">Join with Us</div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -416,7 +472,7 @@
                 var header = document.getElementById("header");
                 var headerws = document.getElementById("headerws-js");
 
-                header.style.height="46px";
+                header.style.height="40px";
                 headerws.style.display="none";
             }else{
                 var header = document.getElementById("header");
@@ -517,10 +573,33 @@
                 heading.style.display="none";
             }
 
+            if (document.documentElement.scrollTop> 2000) {
+                var content = document.querySelector(".community")
+                content.style.display="flex";
+            }else{
+                var content = document.querySelector(".community")
+                content.style.display="none";
+            }
 
+            if (document.documentElement.scrollTop> 2300){
+                var content = document.querySelector(".slogan")
+                content.style.display="flex";
+            }else{
+                var content = document.querySelector(".slogan")
+                content.style.display="none";
+            }
+
+            if (document.documentElement.scrollTop > 3400){
+                var content = document.querySelector(".slogan-content")
+                content.style.display="block";
+            }else{
+                var content = document.querySelector(".slogan-content")
+                content.style.display="none";
+            }
 
         }
 
+        var join = document.querySelector(".slogan-btn");
         var closeBtn = document.getElementById("form-close-btn");
         var formSign = document.getElementById("login-form");
         var btnAccount = document.getElementById("header-signup");
@@ -531,6 +610,9 @@
             e.stopPropagation();
         }
 
+        join.onclick = function(){
+            formSign.classList.add("open-fl");
+        }
         
         closeBtn.onclick = function(e){
             formSign.classList.remove("open-fl");
@@ -540,12 +622,27 @@
             formSign.classList.remove("open-fl");
         }
 
+
+
         var slick = document.querySelector(".header-darkmode-btn");
         var body = document.querySelector("body");
         slick.onclick = function(){
             body.classList.toggle("dark");
         }
 
+        var viewCard = document.querySelector(".community-showcard");
+        var card = document.querySelector(".comunity-card");
+        viewCard.onclick= function(){
+            viewCard.classList.toggle("click");
+            card.classList.toggle("open-fl");
+        }
+
+        var viewCard2 = document.querySelector(".community-showcard2");
+        var card2 = document.querySelector(".comunity-card2");
+        viewCard2.onclick= function(){
+            viewCard2.classList.toggle("click");
+            card2.classList.toggle("open-fl");
+        }
     </script>
 
   

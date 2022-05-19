@@ -9,6 +9,7 @@
 
 
 @media (max-width: 1023px) {
+
     .slider{
         height: 50vh;
     }
@@ -71,6 +72,8 @@
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
+    font-size: 20px;
+    width: 204px;
 }
 
     .hot-sale--img{
@@ -90,4 +93,24 @@
         width: 100%;
     }
 
+}
+
+@media (max-width: 739px){
+    .header-input-btn,.header-input {
+        display: none;
+    }
+
+    .header_nav-list{
+        width: 100%;
+        max-width: 100%;
+        overflow: auto;
+    }
+
+    .header_nav-list::-webkit-scrollbar{
+        display: none;
+    }
+
+    .footer-infos{
+        overflow: hidden;
+    }
 }
