@@ -6,9 +6,10 @@
     top: 0;
     right: 0;
     left: 0;
-    background-color: white;
+    background-color: var(--backgr-color);
     height: var(--header-height);
     z-index: 999 !important;
+    color: var(--text-color);
 }
 
 .header-with-search {
@@ -16,6 +17,31 @@
     align-items: center;
     justify-content: space-between;
     height: var(--header-with-search-height);
+}
+
+.header-signup {
+    font-size: 1.6rem;
+    margin-left: 30px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.header-signup i {
+    font-size: 2.4rem;
+    margin-right: 4px;
+    line-height: 36px;
+}
+
+.header-signup span {
+    transform: translateY(-3px);
+    display: inline-block;
+}
+
+.header-signup:hover {
+    animation: rung linear 0.5s infinite;
+    opacity: 0.7;
+    cursor: pointer;
+
 }
 
 .header-logo {
@@ -55,7 +81,7 @@
     height: 36px;
     min-width: 80px;
     font-size: 1.4rem;
-    color: #2c1e1e;
+    color: var(--text-color);
     background-color: var(--primary-color);
     border: none;
 }
@@ -145,7 +171,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    color: black;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -180,14 +206,94 @@
 
 .header_nav-link {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
     display: block;
     width: 100%;
     height: 100%;
 }
+
+#slick-darkmode {
+    display: none;
+}
+
+#slick-darkmode:checked~label {
+    transform: translateX(18px) translateY(-50%);
+
+}
+
+.header-darkmode {
+    width: 40px;
+    height: 24px;
+    background-color: var(--text-color);
+    border-radius: 12px;
+    margin-left: 10px;
+    position: relative;
+
+}
+
+.header-darkmode-btn {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: var(--backgr-color);
+    border-radius: 50%;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+}
+/* Slider */
+.slider{
+    width: 1000px;
+    margin: 0 auto;
+    height: 500px;
+    position: relative;
+    margin-top: calc(var(--header-height) + 10px);
+    overflow: hidden;
+}
+.slider-img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill ;
+    transition:all linear 1s;
+}
+#slider_btn-l{
+    opacity: 0.9;
+    position: absolute;
+    top: 50%;
+    left:0;
+    transform: translateY(-50%);
+    width: 80px;
+    border-color:var(--border-color) ;
+    height: 100px;
+    background-color: rgb(55, 54, 54);
+    font-size: 5rem;
+}
+#slider_btn-l i,
+#slider_btn-r i {
+    color: wheat;
+}
+
+#slider_btn-r {
+    opacity: 0.9;
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 80px;
+    border-color: var(--border-color);
+    height: 100px;
+    background-color: rgb(55, 54, 54);
+    font-size: 5rem;
+}
+#slider_btn-l:hover,#slider_btn-r:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
 /* content */
 .banner{
-    margin-top:100px;
+    margin-top:900px;
     width: 100%;
     height: 100%;
 }
@@ -218,6 +324,8 @@
     font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    overflow: hidden;
+   position: relative;
 }
 .category button:hover{
   background-color: rgb(255, 255, 255);
@@ -240,8 +348,11 @@
 }
 .tablink:hover {
     background-color: rgb(207, 198, 198);
+    transform: scale(1.05);
+    color: #444;
 }
 
+ 
 
 .listproduce{
     flex: 1;
@@ -280,12 +391,12 @@
 }
 .shoe:hover{
     border: 1px solid ;
-   transform: scale(1.05) ;
+   transform: scale(1.07) ;
 
 }
 
 .thumnail:hover img{
-    animation: xoayz linear 1s;
+    /* animation: xoayz linear 1s; */
 }
 
 
@@ -377,6 +488,7 @@ position: relative;
 }
 .bsl{
     margin-bottom: 500px;
+    display:block;
 }
 .bsl .collumn{
     padding-top: 90px;
@@ -490,4 +602,38 @@ position: relative;
      to{
         transform:rotateY(360deg);
      }
+ }
+
+
+ 
+ /* back to top */
+
+ .go-to-top {
+     display: none;
+     position: fixed;
+     width: 70px;
+     height: 70px;
+     background-color: var(--primary-color);
+     bottom: 50px;
+     right: 50px;
+     border-radius: 50%;
+ }
+
+ .go-to-top p {
+     text-align: center;
+     line-height: 7rem;
+     font-size: 4rem;
+ }
+
+ .go-to-top:hover {
+     cursor: pointer;
+     opacity: 0.8;
+ }
+
+ .go-to-top:hover p {
+     font-size: 5rem;
+ }
+
+ .go-to-top p i {
+     margin: auto;
  }
