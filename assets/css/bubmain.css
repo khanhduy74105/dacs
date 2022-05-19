@@ -1,22 +1,22 @@
 .noidung {
-    margin-top: calc(var(--header-height) + 10px);
-    padding: 0 200px 0 200px;
-}
-
-
-.noidung img {
     margin-top: 20px;
+    padding: 0 200px 0 200px;
+    color: var(--text-color);
+}
+.banner{
+    margin-top: calc(var(--header-height) + 10px);
+}
+.banner img{
+    width : 100%;
+    height : 100%;
+}
+.noidung img {
     margin-bottom: 10px;
     width: 100%;
 }
 
-.noidung-header {
-   
- 
-   
-}
 .noidung-header h1 {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-family: Monsterrat;
     /* text-align: center; */
     font-size: 40px;
@@ -55,7 +55,7 @@
    
 }
 .noidung-content{
-    font-size:20px;
+    font-size:19px;
     line-height: 40px;
 }
 .noidung-content  ul{
@@ -66,7 +66,7 @@
     border :1px solid rgb(57, 106, 252);
     border-radius : 10px;
     padding : 20px;
-    font-size: 15px;
+    font-size: 20px;
     line-height:20px;
     margin-bottom: 10px;
 }
@@ -76,4 +76,9 @@
     display: block;
     color: rgb(57, 106, 252);
     text-decoration: none;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    
 }
