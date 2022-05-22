@@ -1,0 +1,128 @@
+.container{
+    margin-top: var(--header-height);
+    overflow: hidden;
+}
+
+.shop-content{
+    font-family: 'Bungee', cursive;
+    overflow: hidden;
+
+}
+.shop-content-item-fisrt{
+    width: 100%;
+    background-image: url(../img/brands/nike1.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.shop-content--decript{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+ 
+    font-weight: bold;
+}
+.shop-content--decript p{
+    font-size: 7rem;
+    line-height:7rem;
+    margin-bottom: 20px;
+}
+
+.shop-content--decript span{
+    font-size: 3rem;
+}
+
+
+.shop-content--btn{
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 46px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    font-size: 2.4rem;
+    line-height: 4.6rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all linear 0.25s;
+    overflow: hidden;
+}
+.shop-content--btn span{
+    position: absolute;
+    right: -30px;
+    font-size: 2rem;
+    color: black;
+    transition: all linear 0.25s;
+    opacity: 0;
+
+}
+
+.shop-content--btn:hover{
+    background-color: white;
+    color: black;
+    padding-right: 10px;
+    border: 1px solid black;
+}
+
+.shop-content--btn:hover span{
+    display: inline-block;
+    opacity: 1;
+    right: 10px;
+}
+
+.shop-content-item{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    padding: unset;
+}
+.shop-content-item-part{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    user-select: none;
+}
+
+.shop-content-item-part:nth-child(1){
+    background-image: url(../img/brands/nikebanner.jpg);
+    background-size: cover;
+    background-position-y: 65%;
+}
+
+.shop-content-item-part:nth-child(2){
+    background-image: url(../img/brands/nike2.webp);
+    background-size: cover;
+    background-position: center;
+
+}
+.shop-content div:nth-child(3) .shop-content-item-part:nth-child(1){
+    background-image: url(../img/brands/add1.jpeg);
+}
+.shop-content div:nth-child(3) .shop-content-item-part:nth-child(2){
+    background-image: url(../img/brands/add.jpg);
+    background-size: cover;
+    background-position-y: 75%;
+}
+
+.shop-content div:nth-child(4) .shop-content-item-part:nth-child(1){
+    background-image: url(../img/brands/cv.jpg);
+    background-position-y: 70%;
+    color: white;
+
+}
+.shop-content div:nth-child(4) .shop-content-item-part:nth-child(1) a{
+    background-color: white;
+    color: black;
+}
+.shop-content div:nth-child(4) .shop-content-item-part:nth-child(1) p{
+    font-size: 5rem;
+}
+.shop-content div:nth-child(4) .shop-content-item-part:nth-child(2){
+    background-image: url(../img/brands/cva.jpeg);
+    background-size: cover;
+}
+
+
