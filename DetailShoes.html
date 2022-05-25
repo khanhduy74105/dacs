@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/DetailShoe.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@632;802;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Nunito+Sans:wght@200&family=PT+Sans&family=Playfair+Display:wght@500&family=Rubik:wght@300;400&family=Yanone+Kaffeesatz:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.0.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@632;802;900&display=swap" rel="stylesheet">
+    <script src="./assets/product.js"></script>
+    <title>Website giới thiệu giày</title>
+</head>
+
+<body>
+<div id="header" class="header">
+    <div class="grid wide">
+        <div id="headerws-js" class="header-with-search">
+
+            <div class="header-logo">
+                <a href="" class="header-logo-link">
+
+                    <img src="./assets/img/logoMain.jpg" alt="" class="header-logo-img">
+
+                    <div class="header-name">
+                        <img src="./assets/img/logo.png" alt="">
+                    </div>
+                </a>
+            </div>
+            <div class="header-input-search">
+                <input type="text" class="header-input" placeholder="WHAT DO YOU WANT ?">
+                <button class="header-input-btn">SEARCH</button>
+                <div class="header-darkmode">
+                    <input type="checkbox" id="slick-darkmode">
+                    <label for="slick-darkmode" class="header-darkmode-btn"></label>
+                </div>
+                <div class="header-signup" id="header-signup">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span>Sign Up</span>
+                </div>
+            </div>
+
+        </div>
+        <nav class="header_nav row">
+            <div class="header_nav-category">CATEGORY
+                <i class="fa-solid fa-bars"></i>
+
+                <ul class="header_nav-category--list">
+                    <li class="category--list-item"><a href="./index.html" class="category--list-link">HOME</a></li>
+                    <li class="category--list-item"><a href="./news.html" class="category--list-link">NEWS</a></li>
+                    <li class="category--list-item"><a href="./product.html" class="category--list-link">PRODUCT</a>
+                    </li>
+                    <li class="category--list-item"><a href="./shops.html" class="category--list-link">SALE
+                            SYSTEMS</a></li>
+                </ul>
+            </div>
+            <ul class="header_nav-list">
+                <li class="header_nav-item"><a href="./index.html" class="header_nav-link">HOME</a></li>
+                <li class="header_nav-item"><a href="./news.html" class="header_nav-link">NEWS</a></li>
+                <li class="header_nav-item"><a href="./product.html" class="header_nav-link">PRODUCT</a></li>
+                <li class="header_nav-item"><a href="./shops.html" class="header_nav-link">SALE SYSTEMS</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <div class="content-container">
+            <div class="link-title">
+                <span><a href="./index.html">Home ></a></span><span><a href="./product.html">Adidas ></a></span><span><a href="./DetailShoes.html">AIR JORDAN 1 LOW SHATTERED BACKBOARD</span>
+            </div>
+            <div class="detail-shoe">
+                <div class="thumnail-shoe">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="./assets/shoedetail/jordan2.jpg" style="width:500px; height:500px;">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="./assets/shoedetail/jordan6.jpg" style="width:500px; height:500px;">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="./assets/shoedetail/jordan4.jpg" style="width:500px; height:500px;">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="./assets/shoedetail/jordan5.jpeg" style="width:500px; height:500px;">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="./assets/shoedetail/jordan3.jpg" style="width:500px; height:500px;">
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="./assets/shoedetail/jordan2.jpg" style="width:100px" onclick="currentSlide(1)"
+                                alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./assets/shoedetail/jordan6.jpg" style="width:100px" onclick="currentSlide(2)"
+                                alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./assets/shoedetail/jordan4.jpg" style="width:100px" onclick="currentSlide(3)"
+                                alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./assets/shoedetail/jordan5.jpeg" style="width:100px" onclick="currentSlide(4)"
+                                alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./assets/shoedetail/jordan3.jpg" style="width:100px" onclick="currentSlide(5)"
+                                alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="./assets/shoedetail/jordan2.jpg" style="width:100px" onclick="currentSlide(6)"
+                                alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+                        </div>
+                    </div>
+                </div>
+                <div class="info-shoe">
+                    <div class="code-shoe">
+                        <span>H4952M1020</span>
+                    </div>
+                    <div class="name-shoe">
+                        <span>AIR JORDAN 1 LOW SHATTERED BACKBOARD</span>
+                    </div>
+                    <div class="stock-shoe">
+                        <span>IN STOCK</span>
+                    </div>
+                    <div class="price-shoe">
+                        <p>9,500,000 vnd</p>
+                    </div>
+                    <div class="star-shoe">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    </div>
+                    <div class="color-shoe">
+                        <h2>COLOR: ORANGE</h2>
+                     
+                    </div>
+                    <div class="size-shoe">
+                        <select class="size" >
+                            <option value="1">SELECT...</option>
+                            <option value="1">6.5</option>
+                            <option value="1">10</option>
+                            <option value="1">6</option>
+                            <option value="1">6</option>
+
+                        </select>
+                        <select class="width">
+                            <option value="1">MEDIUM</option>
+                        </select>
+                    </div>
+                    <div class="ship-shoe">
+                        <ul type="none">
+                            <li><input  type="radio" name="" id="">STANDARD SHIPPING <span>(Free $49.95+)</span><h6>Arrives in 4 to 7 Business Days</h6><p>More shipping options available in checkout if eligible. </p></li>
+                            <li><input type="radio" name="" id="">IN-STORE PICKUP <span>(Free)</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="add-cart">
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-info">
+                <div class="description">
+                    <hr>
+                     <div class="title"><span>Product Details</span></div>
+                     <div class="product-detail">
+                         <div class="detail">
+                             <table>
+                                <tr>
+                                    <td>Code</td>
+                                    <th>553558-128</th>
+                                </tr>
+                                <tr>
+                                    <td>Colorway</td>
+                                    <th>ORANGE/WHITE/BLACK</th>
+                                </tr>
+                                <tr>
+                                    <td>Retail Price </td>
+                                    <th>9,500,000 vnd</th>           
+                                </tr>
+                                <tr>
+                                    <td>Release Date</td>
+                                    <th>08/26/2021</th>
+                                </tr>
+                             </table>
+                         </div>
+                         <div class="in4">
+                             <span><b>Product Description</b></span>
+                             <p>The Jordan 1 Low Shattered Backboard features a black nubuck leather upper with white and orange leather overlays.<br> From
+                            there, the black suede lining around the forefoot and the orange leather heel with an Air Jordan Wings logo stitched
+                            into the middle complete the design.</p>
+                            
+                            <p>The Jordan 1 Low Shattered Backboard released in August of 2021 and retailed for $130.</p>
+                         </div>
+                     </div>
+                    <div class="title"><span>Videos</span></div>
+                    <div class="video-shoe">
+                      <video controls autoplay="true" muted>
+                         <source src="./assets/videos/jodan1low.mp4" type="video/mp4">
+                      </video>
+                        <p>The Jordan 1 Low Shattered Backboard features a black nubuck leather upper with white and orange leather
+                            overlays.<br> From
+                            there, the black suede lining around the forefoot and the orange leather heel with an Air Jordan Wings logo stitched
+                            into the middle complete the design.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+
+</script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row no-gutters">
+                <div class="col l-3 m-6 footer-category">
+                    <h3 class="footer-category_header">CATEGORY</h3>
+                    <ul class="footer-categor_list">
+                        <li class="footer-category_item"><a href="" class="footer-category_link">HOME</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">NEWS</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">PRODUCT</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">SALE SYSTEMS</a></li>
+                    </ul>
+                </div>
+
+                <div class="col l-3 m-6 footer-category">
+                    <h3 class="footer-category_header">OUR WEBSITE</h3>
+                    <ul class="footer-categor_list">
+                        <li class="footer-category_item"><a href="" class="footer-category_link">BLOG</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">BUY</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">CONTACT</a></li>
+                        <li class="footer-category_item"><a href="" class="footer-category_link">COMMUNITY</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-copywrite col l-6 m-12">
+                    <div class="row no-gutters footer-brands">
+                        <div class="footer--brand col l-4 m-4 ">
+                            <img src="./assets/img/brands/adidas.png" alt="" class="">
+                        </div>
+                        <div class="footer--brand col l-4 m-4">
+                            <img src="./assets/img/brands/converse.png" alt="" class="">
+                        </div>
+                        <div class="footer--brand col l-4 m-4">
+                            <img src="./assets/img/brands/nike.jpg" alt="" class="">
+                        </div>
+                    </div>
+                    <div class="row no-gutters footer-infos">
+                        <div class="col l-6 m-6">
+                            <span class="footer-copywrite_name"><i class="fa-solid fa-address-card"></i>Nguyễn Thái
+                                Khánh Duy</span>
+                            <span class="footer-copywrite_email"><i
+                                    class="fa-solid fa-envelope"></i>duyntk.21it@vku.udn.vn</span>
+                            <span class="footer-copywrite_phone"><i class="fa-solid fa-phone"></i>0941 972 159</span>
+                        </div>
+                        <div class="col l-6 m-6">
+                            <span class="footer-copywrite_name"><i class="fa-solid fa-address-card"></i>Hồ Đăng
+                                Nguyện</span>
+                            <span class="footer-copywrite_email"><i
+                                    class="fa-solid fa-envelope"></i>nguyenhd.21it@vku.udn.vn</span>
+                            <span class="footer-copywrite_phone"><i class="fa-solid fa-phone"></i>0382876922</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-social col l-12 m-12">
+                    <a href="" class="footer-social_item"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="" class="footer-social_item"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="footer-social_item"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" class="footer-social_item"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="footer-social_item"><i class="fa-brands fa-pinterest"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="login-form" id="login-form">
+
+        <div class="login-form-container" id="login-form-container">
+            <div class="login-accout">
+                <div class="login-head">
+
+                    <h2 class="login-header">Sign up</h2>
+                    <h2 class="login-navi">Sign in</h2>
+                </div>
+
+                <form action="" class="form-account">
+                    <label for="form-account-username" class="">User Name</label>
+                    <div class="form-input">
+
+                        <input type="text" id="form-account-username" placeholder="Username...">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <label for="form-account-email" class="">Email</label>
+                    <div class="form-input">
+
+                        <input type="email" id="form-account-email" placeholder="Email...">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <label for="form-account-pass" class="">Password</label>
+                    <div class="form-input">
+
+                        <input type="password" id="form-account-pass" placeholder="Password...">
+                        <i class="fa-solid fa-eye-slash"></i>
+                    </div>
+
+                    <input id="form-submit" type="submit" style="display: none;">
+                </form>
+
+                <button class="login-btn-submit">
+                    <label for="form-submit"> SIGN UP NOW</label>
+                </button>
+
+                <hr style="width: 70%; margin:20px auto;">
+
+                <div class="login-sub">
+                    <h2>Or connect with -</h2>
+
+                    <div class="login-social">
+
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="login-img">
+                <img src="./assets/img/cv.gif" alt="">
+            </div>
+
+            <div class="form-close-btn" id="form-close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="go-to-top">
+        <p>
+            <i class="fa-solid fa-angle-up"></i>
+
+        </p>
+    </div>
+
+
+
+
+
+
+    <script src="./assets/main.js"></script>
+
+</body>
+
+</html>
