@@ -154,7 +154,7 @@
                 content.style.display="none";
             }
 
-            if (document.documentElement.scrollTop > 3400){
+            if (document.documentElement.scrollTop > 3200){
                 var content = document.querySelector(".slogan-content")
                 content.style.display="block";
             }else{
@@ -210,13 +210,13 @@
             }
         }
 
-        var x = document.getElementById("form-account-pass2");
+        var y = document.getElementById("form-account-pass2");
 
         hide1.onclick = function(){
-            if (x.type === "password") {
-                x.type = "text";
+            if (y.type === "password") {
+                y.type = "text";
             } else {
-                x.type = "password";
+                y.type = "password";
             }
         }
 
@@ -240,4 +240,11 @@
         viewCard2.onclick= function(){
             viewCard2.classList.toggle("click");
             card2.classList.toggle("open-fl");
+        }
+
+        var cate = document.querySelector(".header_nav-category");
+        var cateList = document.querySelector(".header_nav-category--list");
+
+        cate.onclick= ()=>{
+            cateList.classList.toggle('open');
         }

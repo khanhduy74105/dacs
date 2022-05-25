@@ -27,7 +27,7 @@
     margin-left: 30px;
     height: 36px;
     line-height: 36px;
-    min-width: 90px;
+    min-width: 110px;
 }
 .header-signup i{
     font-size: 2.4rem;
@@ -55,7 +55,6 @@
 .header-logo{
     display: flex;
     align-items: center;
-    max-width: 20%;
     height: 100%;
 }
 .header-logo-img{
@@ -67,6 +66,7 @@
     font-size: 1.4rem;
     line-height: 14px;
     height: 100%;
+    min-width: 160px;
 }
 
 .header-name img{
@@ -127,8 +127,12 @@
     position: relative;
     color: white;
 }
-.header_nav-category:hover .header_nav-category--list{
-    display: block;
+
+@media (min-width: 1024px){
+    .header_nav-category:hover .header_nav-category--list{
+        display: block;
+    }
+
 }
 .header_nav-category,.header_nav-list{
     line-height: var(--nav-height);
@@ -964,6 +968,7 @@
     justify-content: center;
     align-items: flex-end;
     animation: bottomIn linear 1s;
+    background-position: center;
 }
 .slogan-content{
     animation: fadeIn linear 1s;
