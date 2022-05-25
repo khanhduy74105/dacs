@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mySlides img {
+            vertical-align: middle;
+            margin-left: 200px;
+        }
+
+        .thumnail-shoe{
+            position: relative;
+            width: 900px;
+        }
+
+        .mySlides {
+            display: none;
+            width: 900px;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        .cursor {
+            cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 40%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #000000;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+            text-align: center;
+            background-color: rgb(255, 252, 252);
+            padding: 2px 16px;
+            color: rgb(0, 0, 0);
+            width: 800px;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+            opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thumnail-shoe">
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="./shoedetail/jordan2.jpg" style="width:500px; height:500px;">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="./shoedetail/jordan6.jpg" style="width:500px; height:500px;">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="./shoedetail/jordan4.jpg" style="width:500px; height:500px;">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="./shoedetail/jordan5.jpeg" style="width:500px; height:500px;">
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="./shoedetail/jordan3.jpg" style="width:500px; height:500px;">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="./shoedetail/jordan2.jpg" style="width:100px" onclick="currentSlide(1)"
+                    alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./shoedetail/jordan6.jpg" style="width:100px" onclick="currentSlide(2)"
+                    alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./shoedetail/jordan4.jpg" style="width:100px" onclick="currentSlide(3)"
+                    alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./shoedetail/jordan5.jpeg" style="width:100px" onclick="currentSlide(4)"
+                    alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./shoedetail/jordan3.jpg" style="width:100px" onclick="currentSlide(5)"
+                    alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./shoedetail/jordan2.jpg" style="width:100px" onclick="currentSlide(6)"
+                    alt="AIR JORDAN 1 LOW SHATTERED BACKBOARD">
+            </div>
+        </div>
+    </div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+</body>
+
+</html>

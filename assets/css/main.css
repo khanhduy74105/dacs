@@ -107,18 +107,22 @@
 }
 
 .header_nav{
-    display: flex;
     background-color: var(--primary-color);
     height: var(--nav-height);
-    justify-content: space-between;
-    margin: unset;
+   
 }
 
+.header_nav-content{
+    display: flex;
+    justify-content: space-between;
+    margin: unset;
+    width: 1400px;
+    margin: auto;
+}
 .header_nav-category{
     width: 200px;
     max-width: 30%;
     text-align: left;
-    padding-left: 20px;
     cursor: pointer;
     position: relative;
     color: white;
@@ -248,6 +252,7 @@
     top: 50%;
     left: 2px;
     transform: translateY(-50%);
+    transition: transform linear 0.15s;
 }
 /* Slider */
 .slider{
