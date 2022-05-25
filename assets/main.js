@@ -138,7 +138,7 @@
                 heading.style.display="none";
             }
 
-            if (document.documentElement.scrollTop> 2000) {
+            if (document.documentElement.scrollTop> 1800) {
                 var content = document.querySelector(".community")
                 content.style.display="flex";
             }else{
@@ -146,7 +146,7 @@
                 content.style.display="none";
             }
 
-            if (document.documentElement.scrollTop> 2300){
+            if (document.documentElement.scrollTop> 2500){
                 var content = document.querySelector(".slogan")
                 content.style.display="flex";
             }else{
@@ -154,7 +154,7 @@
                 content.style.display="none";
             }
 
-            if (document.documentElement.scrollTop > 3400){
+            if (document.documentElement.scrollTop > 3200){
                 var content = document.querySelector(".slogan-content")
                 content.style.display="block";
             }else{
