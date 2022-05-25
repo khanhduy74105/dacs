@@ -1,4 +1,3 @@
-
         var i = 1;
         showImg(i);
         function playSlide(param) {
@@ -186,6 +185,39 @@
 
         formSign.onclick = function(e){
             formSign.classList.remove("open-fl");
+        }
+
+        var logNav = document.querySelector('.login-navi');
+        var logNav2 = document.querySelector('.login-navi2');
+        var log = document.querySelector('.login-accout');
+        logNav.onclick= function(){
+            document.querySelector('.login-stt:first-child').classList.toggle("active")
+            document.querySelector('.login-stt:last-child').classList.toggle("active")
+        }
+        logNav2.onclick= function(){
+            document.querySelector('.login-stt:first-child').classList.toggle("active")
+            document.querySelector('.login-stt:last-child').classList.toggle("active")
+        }
+        var hide = document.querySelector('.hidepw');
+        var hide1 = document.querySelector('.hidepw2');
+
+        var x = document.getElementById("form-account-pass");
+        hide.onclick = function(){
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+
+        var x = document.getElementById("form-account-pass2");
+
+        hide1.onclick = function(){
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
         }
 
 
