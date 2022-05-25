@@ -55,7 +55,9 @@
     font-size: 32px;
     line-height: 32px;
 }
-
+.item-title a:hover {
+    text-shadow: 2px 2px blue;
+}
 .item-title-author,
 .item-title-stars {
     margin-top: 10px;
@@ -139,14 +141,22 @@
     text-align: center;
     min-width: 80px;
 }
-
+.main-content-right .right-item:hover>h1{
+    box-shadow: 0 0 5px blue;
+    text-shadow:  0 0 5px blue;
+    color: white;
+    border-color:#ffffff;
+    
+} 
+.main-content-right .right-item:hover>div{
+    font-weight: 700;
+    
+} 
 .right-item-content {
     display: flex;
     flex-direction: column;
 }
-.right-item:hover {
-    font-weight: 700;
-}
+
 
 
 .right-item-content .content-1 {
