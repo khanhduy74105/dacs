@@ -12,7 +12,18 @@
     .shop-content>div{
         height: 60vh;
     }
-    
+
+    .main-content-right,
+    .main-content-left{
+        width: 100%;
+    }
+    .fb-page.fb_iframe_widget{
+        margin: auto;
+    }
+    #item-title{
+        font-size: 2rem;
+        padding: unset;
+    }
 }
 
 

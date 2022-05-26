@@ -28,3 +28,8 @@ html {
 body {
     background-color: var(--backgr-color);
 }
+
+.clear{
+    clear: both;
+    
+}
