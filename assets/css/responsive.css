@@ -29,7 +29,20 @@
 
 
 @media (max-width: 1023px) {
-    
+    .collumn {
+        width: 50%;
+    }
+    .category{
+        height: fit-content;
+    }
+    .category .tablink{
+        padding: 10px 0;
+        font-size: 14px;
+
+    }
+    .tablink span, .tablink{
+        font-size: 14px;
+    }
     .slider{
         height: 50vh;
     }
