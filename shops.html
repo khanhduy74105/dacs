@@ -14,16 +14,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@632;802;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="icon" type="image/x-icon" href="./assets/img/logoMain.jpg">
     
 </head>
 <body>
+    <div class="loader">
+        <img src="./assets/img/loading1.gif" alt="">
+    </div>
     <div id="header" class="header">
         <div class="grid wide">
 
             <div id="headerws-js" class="header-with-search">
 
                 <div class="header-logo">
-                    <a href="" class="header-logo-link">
+                    <a href="./index.html" class="header-logo-link">
 
                         
 
@@ -352,6 +356,11 @@
 
 
     <script>
+        window.onload = function(){
+        setTimeout(() => {
+            document.querySelector(".loader").style.display="none";
+        }, 2000);
+       }
         var slick = document.querySelector(".header-darkmode-btn");
         var body = document.querySelector("body");
         slick.onclick = function(){

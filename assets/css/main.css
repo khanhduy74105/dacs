@@ -1425,6 +1425,16 @@
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
 @keyframes bottomIn {
     from {
         transform: translateY(100%);

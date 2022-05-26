@@ -1,4 +1,11 @@
-        var i = 1;
+       window.onload = function(){
+        setTimeout(() => {
+            document.querySelector(".loader").style.display="none";
+        }, 2000);
+       }
+       
+
+       var i = 1;
         showImg(i);
         function playSlide(param) {
             showImg(i+=param);

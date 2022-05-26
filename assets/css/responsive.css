@@ -29,6 +29,12 @@
 
 
 @media (max-width: 1023px) {
+    .video-shoe{
+        margin: unset;
+    }
+    .mySlides img{
+        margin: unset;
+    }
     .collumn {
         width: 50%;
     }
